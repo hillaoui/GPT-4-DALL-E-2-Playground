@@ -10,7 +10,10 @@ We take security seriously, and all API keys are encrypted and stored in your br
 
 ### Mock ChatGPT Environment
 My Mock ChatGPT Environment has most of the critical features, such as conversation history (which is stored locally), prompting, and multiple conversations. This environment is a great way to test out your API key and see how it works!
-![ChatGpt-4 ChatGPT](https://i.imgur.com/DfTbV9d.png)
+
+![ChatGpt-4 ChatGPT Home Page](https://i.imgur.com/lQA3m1t.png)
+
+![](https://i.imgur.com/FgvpKXn.png)
 
 ### Playground Environment
 ![ChatGpt-4 Playground](https://i.imgur.com/DS6NPH2.png)
