@@ -6,7 +6,7 @@ import { OpenAIConfig } from '@/utils/OpenAI';
 
 type Props = {};
 
-export default function CurrentModel({}: Props) {
+export default function CurrentModel({ }: Props) {
   const { config, updateConfig } = useOpenAI();
   const { models, loadingModels } = useModels();
 
