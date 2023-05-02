@@ -55,10 +55,10 @@ export default function Dalle() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create DALLE 2 App</title>
+        <title>DALLE 2 Playgroung</title>
       </Head>
 
-      <main className={styles.main}>
+      <main className={styles.main} style={{ height: "100%", width: "120%" }}>
         <h1 className={styles.title}>
           Create images with <span className={styles.titleColor}>DALLE 2</span>
         </h1>
@@ -112,7 +112,6 @@ export default function Dalle() {
             return (
               // eslint-disable-next-line react/jsx-key, react/jsx-no-comment-textnodes
               <div className={styles.card}>
-                // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text
                 <img
                   className={styles.imgPreview}
                   src={result.url}
@@ -123,6 +122,6 @@ export default function Dalle() {
           })}
         </div>
       </main>
-    </div>
+    </div >
   );
 }
