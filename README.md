@@ -1,4 +1,4 @@
-# GPT-4 & DALLE-E 2 Playground
+# GPT-4 & DALL-E 2 Playground
 
 Welcome to the GPT-4 & DALL-E 2 Playground! If you have recently acquired your GPT-3 or GPT-4 API Key and want to test it out, this project is perfect for you. Our aim is to provide a better developer experience by allowing you to test your API key in a rendered chat environment without compromising on the vanilla experience.
 
