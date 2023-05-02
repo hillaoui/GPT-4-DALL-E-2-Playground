@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { MdAdd, MdDeleteOutline, MdBuild } from "react-icons/md";
+import { MdAdd, MdDeleteOutline, MdBuild, MdImageSearch } from "react-icons/md";
 import { useOpenAI } from "@/context/OpenAIProvider";
 import Github from "../../misc/Github";
 import ThemeButton from "./buttons/ThemeButton";
@@ -34,11 +34,20 @@ export default function ChatSidebar({ }: Props) {
           </div>
           <Link
             className="flex items-center gap-3 rounded p-3 transition-colors hover:bg-gray-500/10"
+            href="/dallee2"
+          >
+            <MdImageSearch />
+            DALLE-E 2
+          </Link>
+          <Link
+            className="flex items-center gap-3 rounded p-3 transition-colors hover:bg-gray-500/10"
             href="/playground"
           >
             <MdBuild />
             Playground
           </Link>
+
+
           <ButtonContainer onClick={clearConversations}>
             <MdDeleteOutline />
             Clear Conversations
