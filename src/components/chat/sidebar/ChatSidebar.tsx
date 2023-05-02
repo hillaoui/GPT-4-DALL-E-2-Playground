@@ -17,6 +17,9 @@ export default function ChatSidebar({ }: Props) {
   return (
     <div className="dark left-0 top-0 h-full max-h-screen flex-col bg-gray-900 text-primary md:fixed md:flex md:w-[260px]">
       <div className="flex h-full flex-col items-stretch p-2">
+        <span className="text-center text-primary/80 border-white/10" style={{ fontSize: 'xxx-large', fontWeight: 'bold', padding: 'inherit' }}>
+          ChatGPT
+        </span>
         <Link
           href="/"
           className="flex items-center gap-3 rounded border border-white/20 p-4 transition-colors hover:bg-gray-500/10"

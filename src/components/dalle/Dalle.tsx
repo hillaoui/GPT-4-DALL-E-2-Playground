@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "../../styles/Home.module.css";
 import axios from "axios";
 
@@ -16,6 +16,8 @@ export default function Dalle() {
   const [results, setResults] = useState<Array<Result>>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<boolean>(false);
+  const [mode, setMode] = useState<string>("light");
+
 
   function getImages() {
     if (token !== "" && prompt !== "") {
@@ -36,7 +38,20 @@ export default function Dalle() {
     }
   }
 
+  function toggleMode() {
+    if (mode === "light") {
+      setMode("dark");
+    } else {
+      setMode("light");
+    }
+  }
+
   const [type, setType] = useState<string>("webp");
+
+  useEffect(() => {
+    document.body.classList.remove("dark-mode", "light-mode");
+    document.body.classList.add(mode + "-mode");
+  }, [mode]);
 
   function download(url: string) {
     axios
@@ -58,7 +73,13 @@ export default function Dalle() {
         <title>DALLE 2 Playgroung</title>
       </Head>
 
-      <main className={styles.main} style={{ height: "100%", width: "120%" }}>
+      <main className={`${styles.main} ${mode === "dark" ? "dark-mode" : "light-mode"}`} style={{
+        height: 'auto',
+        width: '120%',
+        justifyContent: 'start',
+        paddingTop: '5%',
+        fontWeight: '600'
+      }}>
         <h1 className={styles.title}>
           Create images with <span className={styles.titleColor}>DALLE 2</span>
         </h1>
@@ -110,8 +131,7 @@ export default function Dalle() {
         <div className={styles.grid}>
           {results.map((result) => {
             return (
-              // eslint-disable-next-line react/jsx-key, react/jsx-no-comment-textnodes
-              <div className={styles.card}>
+              <div key={result.url} className={styles.card}>
                 <img
                   className={styles.imgPreview}
                   src={result.url}

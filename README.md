@@ -8,14 +8,14 @@ We take security seriously, and all API keys are encrypted and stored in your br
 
 ## Demo
 
-### Mock ChatGPT Environment
-My Mock ChatGPT Environment has most of the critical features, such as conversation history (which is stored locally), prompting, and multiple conversations. This environment is a great way to test out your API key and see how it works!
+### Mock ChatGPT & DALLE-E 2 Environment
+My Mock ChatGPT & DALLE-E 2 Environment has most of the critical features, such as conversation history (which is stored locally), prompting, and multiple conversations. This environment is a great way to test out your API key and see how it works!
 
-![ChatGpt-4 ChatGPT Home Page](https://i.imgur.com/lQA3m1t.png)
+![ChatGpt-4 ChatGPT & DALLE-E 2 Home Page](https://i.imgur.com/lQA3m1t.png)
 
 ![](https://i.imgur.com/FgvpKXn.png)
 
-### Playground Environment
+### ChatGPT-4 Playground Environment
 ![ChatGpt-4 Playground](https://i.imgur.com/DS6NPH2.png)
 
 ## Running Locally
@@ -27,3 +27,12 @@ yarn dev
 ```
 
 This will start a local server on port 3000. You can then navigate to localhost:3000 to view the project!
+
+## Tech Stack
+
+- Node.js
+- Next js
+- Typescript
+- JavaScript
+- React
+- Tailwind CSS

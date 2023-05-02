@@ -4,7 +4,7 @@ import ButtonContainer from "./ButtonContainer";
 
 type Props = {};
 
-export default function ThemeButton({}: Props) {
+export default function ThemeButton({ }: Props) {
   const [dark, setDark] = React.useState(false);
 
   React.useEffect(() => {
