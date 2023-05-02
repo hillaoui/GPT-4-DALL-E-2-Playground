@@ -8,15 +8,24 @@ We take security seriously, and all API keys are encrypted and stored in your br
 
 ## Demo
 
-### Mock ChatGPT Environment
-My Mock ChatGPT Environment has most of the critical features, such as conversation history (which is stored locally), prompting, and multiple conversations. This environment is a great way to test out your API key and see how it works!
+### ChatGPT & DALLE-E 2 Environment
+My ChatGPT & DALLE-E 2 Environment has most of the critical features, such as conversation history (which is stored locally), prompting, and multiple conversations. This environment is a great way to test out your API key and see how it works!
 
-![ChatGpt-4 ChatGPT Home Page](https://i.imgur.com/lQA3m1t.png)
+![ChatGpt-4 ChatGPT & DALLE-E 2 Dark Home Page](https://i.imgur.com/acrJgAm.png)
 
-![](https://i.imgur.com/FgvpKXn.png)
+![ChatGpt-4 ChatGPT & DALLE-E 2 Light Home Page](https://i.imgur.com/HTqBXeX.png)
 
-### Playground Environment
-![ChatGpt-4 Playground](https://i.imgur.com/DS6NPH2.png)
+![Example of a conversation](https://i.imgur.com/wKriCGb.png)
+
+![List Of Models Supported](https://i.imgur.com/y16L304.png)
+
+### ChatGPT-4 and ChatGT-3 Playground Environment
+![ChatGpt-4 & ChatGPT-4 Playground](https://i.imgur.com/DS6NPH2.png)
+
+### Dalle-E 2 Playground Environment
+![Dalle-E 2 Playground Environment](https://i.imgur.com/rRaEie9.png)
+
+![Dalle-E 2 Playground Example](https://i.imgur.com/7knnI4y.png)
 
 ## Running Locally
 To run this project locally, you will need to have [Node.js](https://nodejs.org/en/) installed. Once you have Node.js installed, you can clone this repository and run the following commands:
@@ -27,3 +36,12 @@ yarn dev
 ```
 
 This will start a local server on port 3000. You can then navigate to localhost:3000 to view the project!
+
+## Tech Stack
+
+- Node.js
+- Next js
+- Typescript
+- JavaScript
+- React
+- Tailwind CSS

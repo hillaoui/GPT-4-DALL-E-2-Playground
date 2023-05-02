@@ -1,6 +1,7 @@
 import { AuthProvider } from "@/context/AuthProvider";
 import OpenAIProvider from "@/context/OpenAIProvider";
 import "@/styles/globals.css";
+import "@/styles/dalle.css";
 import type { AppProps } from "next/app";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -13,9 +14,9 @@ export default function App({ Component, pageProps }: AppProps) {
     ).matches;
 
     if (isDarkSet || (!isThemeStored && isDarkPrefered)) {
-      document.documentElement.classList.add("dark");
+      document.documentElement.classList.add("dark-mode");
     } else {
-      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.remove("dark-mode");
     }
   }
 

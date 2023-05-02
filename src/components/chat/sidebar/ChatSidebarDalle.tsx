@@ -11,51 +11,29 @@ import CurrentModel from './buttons/CurrentModel';
 
 type Props = {};
 
-export default function ChatSidebar({ }: Props) {
-  const { clearConversations } = useOpenAI();
+export default function ChatSidebarDalle({ }: Props) {
 
   return (
     <div className="dark left-0 top-0 h-full max-h-screen flex-col bg-gray-900 text-primary md:fixed md:flex md:w-[260px]">
       <div className="flex h-full flex-col items-stretch p-2">
-        <span className="text-center text-primary/80 border-white/10" style={{ fontSize: 'xxx-large', fontWeight: 'bold', padding: 'inherit' }}>
-          ChatGPT
+        <span className="text-center text-primary/80" style={{ fontSize: 'xxx-large', fontWeight: 'bold' }}>
+          Dalle-E 2
         </span>
-        <Link
-          href="/"
-          className="flex items-center gap-3 rounded border border-white/20 p-4 transition-colors hover:bg-gray-500/10"
-        >
-          <MdAdd />
-          New chat
-        </Link>
-
-        <Conversations />
-
         <div className="flex flex-col gap-y-2 border-y border-white/10 py-2">
-          <div className="flex flex-col border-b border-white/10 gap-y-2">
-            <CurrentModel />
-            <ApiKey />
-          </div>
           <Link
             className="flex items-center gap-3 rounded p-3 transition-colors hover:bg-gray-500/10"
-            href="/dalle"
+            href="/"
           >
             <MdImageSearch />
-            DALLE-E 2
+            ChatGPT
           </Link>
           <Link
             className="flex items-center gap-3 rounded p-3 transition-colors hover:bg-gray-500/10"
             href="/playground"
           >
             <MdBuild />
-            Chat GPT Playground
+            ChatGPT Playground
           </Link>
-
-
-          <ButtonContainer onClick={clearConversations}>
-            <MdDeleteOutline />
-            Clear Conversations
-          </ButtonContainer>
-
           <ThemeButton />
         </div>
 
