@@ -44,7 +44,7 @@
     "@types/uuid": "^9.0.1",
     "autoprefixer": "^10.4.14",
     "eslint-plugin-next": "^0.0.0",
-    "postcss": "^8.4.21",
+    "postcss": "^8.4.31",
     "prettier": "^2.8.7",
     "prettier-plugin-tailwindcss": "^0.2.5",
     "tailwind-scrollbar": "^3.0.0",
